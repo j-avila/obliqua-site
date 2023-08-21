@@ -1,0 +1,57 @@
+---
+import "@fontsource/arbutus-slab"
+
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Obliqua es una banda de metal alternativo, oriunda de la ciudad de Caracas. Venezuela."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Raleway:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  html {
+    font-family: "Raleway", sans-serif;
+    background: #1e1e1e;
+    color: white;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Arbutus Slab", serif;
+  }
+  code {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  }
+  .btn {
+    @apply py-2 px-4 rounded-md;
+    background-color: accent-color;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+  }
+</style>

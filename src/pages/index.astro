@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Head.astro"
+import Footer from "../components/Footer.astro"
+import Player from "../sections/Player.astro"
+import Bio from "../sections/Bio.astro"
+import Multimedia from "../sections/Multimedia.astro"
+import Dates from "../sections/Dates.astro"
+---
+
+<Layout title="Obliqua Music">
+  <main class="mx-auto">
+    <Header />
+    <div class="flex flex-wrap items-center justify-center gap-36">
+      <Player />
+      <Bio />
+    </div>
+    <Dates />
+    <Multimedia />
+    <section class="flex flex-col items-center gap-6 justify-center my-24">
+      <h1>Para contato más info</h1>
+      <a class="btn bg-accentColor" href="emailto:obliquabanda@gmail.com"
+        >Escribenos</a
+      >
+    </section>
+    <Footer />
+  </main>
+</Layout>

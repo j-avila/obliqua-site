@@ -1,0 +1,11 @@
+---
+import cover from "../assets/BG-hero.png"
+import hero from "../assets/BG-hero-desktop.png"
+import logo from "../assets/logo.svg"
+---
+
+<header class="flex justify-center">
+  <img src={logo.src} class="absolute top-5" />
+  <img src={hero.src} class="w-full -mt-12 hidden lg:block" />
+  <img src={cover.src} class="w-full -mt-12 visible lg:hidden" />
+</header>
