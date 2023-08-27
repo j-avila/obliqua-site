@@ -5,7 +5,11 @@ import logo from "../assets/logo.svg"
 ---
 
 <header class="flex justify-center pt-8 md:pt-0">
-  <img src={logo.src} class="absolute top-5" />
-  <img src={hero.src} class="w-full -mt-12 hidden lg:block" />
-  <img src={cover.src} class="w-full -mt-12 visible lg:hidden" />
+  <img src={logo.src} class="absolute top-5" draggable="false" />
+  <img src={hero.src} class="w-full -mt-12 hidden lg:block" draggable="false" />
+  <img
+    src={cover.src}
+    class="w-full -mt-12 visible lg:hidden"
+    draggable="false"
+  />
 </header>
