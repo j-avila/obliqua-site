@@ -5,8 +5,8 @@ import tailwind from "@astrojs/tailwind"
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://j-avila.github.io",
-  base: "/obliqua-site",
+  site: "https://obliqua.band",
+  base: "/",
   integrations: [react(), tailwind()],
   experimental: {
     assets: true,
