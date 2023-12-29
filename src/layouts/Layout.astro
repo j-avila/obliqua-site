@@ -9,7 +9,7 @@ interface Props {
 const { title } = Astro.props
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,6 +27,33 @@ const { title } = Astro.props
     />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <!-- social -->
+    <meta
+      name="keywords"
+      content="Rock, Band, Metal, Music, Chile, Venezuela"
+    />
+    <meta name="author" content="Jose Avila" />
+    <link rel="canonical" href="https://obliqua.band/" />
+    <meta name="robots" content="index, follow" />
+
+    <!--  Essential Social Meta Tags -->
+    <meta property="og:title" content="Obliqua Banda" />
+    <meta
+      property="og:description"
+      content="Obliqua es una banda de metal alternativo, oriunda de la ciudad de Caracas. Venezuela."
+    />
+    <meta
+      property="og:image"
+      content="https://obliqua.band/_astro/logo.0c2f5a8f.svg"
+    />
+    <meta property="og:url" content="https://obliqua.band/" />
+    <meta
+      property="twitter:card"
+      content="https://obliqua.band/_astro/logo.0c2f5a8f.svg"
+    />
+    <meta property="og:site_name" content="Obliqua Banda" />
+    <meta property="twitter:image:alt" content="Obliqua Banda" />
   </head>
   <body>
     <slot />
@@ -44,15 +71,8 @@ const { title } = Astro.props
     font-family: "Arbutus Slab", serif;
   }
   code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
   .btn {
     @apply py-2 px-4 rounded-md;
